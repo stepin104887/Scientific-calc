@@ -1,5 +1,5 @@
-SRC = src/calculator_operations.c\
-main.c
+SRC = project_main.c\
+src/calculator_operations.c\
 
 INC = -Iinc
 
