@@ -1,13 +1,12 @@
-SRC=src/calculator_operations.h\
+SRC = src/calculator_operations.c\
 main.c
 
-INC=-Iinc
+INC = -Iinc
 
-PROJECT_NAME=calculator_operations.c
+PROJECT_NAME = calculator_operations.exe
 
-$(PROJECT_NAME):$(SRC)
-  gcc $(SRC) $(INC) -o $(PROJECT_NAME)
+$(PROJECT_NAME): $(SRC)
+	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
 
 run:$(PROJECT_NAME)
-  ./${PROJECT_NAME}
-
+	./${PROJECT_NAME}
